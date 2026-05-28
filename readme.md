@@ -104,7 +104,7 @@ Power BI Dashboard + Excel Hesabat
 
 ```bash
 # 1. Klonla
-git clone https://github.com/USERNAME/superstore_dashboard.git
+git clone https://github.com/zamanovaalmaz04-glitch/superstore-dashboard.git
 
 # 2. Paketləri quraşdır
 pip install pandas plotly openpyxl
