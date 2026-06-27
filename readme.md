@@ -1,4 +1,135 @@
-# 📊 Superstore Satış Analizi Dashboard
+# 📊 Superstore Sales Analysis Dashboard
+
+> **A comprehensive analysis of 4-year (2014-2017) sales data from a US retail store —**
+> Python ETL · SQLite · SQL · Power BI · Plotly · RFM Analysis
+
+---
+
+## 🎯 Project Objective
+
+Answering real-world business questions using data:
+
+* Which products are **losing money**?
+* Which customers are **VIPs**, and which ones are **at risk**?
+* How do **discounts** impact profitability?
+* Which region is the most **profitable**?
+
+---
+
+## 🔍 Key Findings
+
+| Finding | Value |
+| --- | --- |
+| 💰 Total Sales | $2.3M |
+| 📈 Top Selling Product | Canon imageCLASS 2200 ($61,599) |
+| ⚠️ Biggest Loss Maker | Cubify CubeX 3D Printer (-$9,239) |
+| 🔴 Critical Finding | 40%+ discount → average loss of $134 per order |
+| 👥 VIP Customer Count | 193 customers |
+| 🌍 Most Profitable Region | West (14.94% profit margin) |
+
+---
+
+## 🛠️ Technologies Used
+
+---
+
+## 📁 Project Structure
+
+```
+superstore_dashboard/
+├── 📁 data/
+│   └── Sample - Superstore.csv       # Raw data (9,986 orders)
+├── 📁 notebooks/
+│   ├── 01_etl.ipynb                  # ETL pipeline
+│   └── 02_analiz.ipynb               # SQL + RFM + Plotly
+├── 📁 sql/
+│   └── analiz.sql                    # 5 business queries
+├── 📁 dashboard/
+│   ├── proje9.pbix                   # Power BI dashboard
+│   ├── hesabat.xlsx                  # Excel report (5 sheets)
+│   ├── index.html                    # Interactive charts
+│   ├── rfm_seqment.html              # RFM analysis
+│   ├── satis_trendi.html             # Monthly trend
+│   └── endirim_menfeet.html          # Scatter analysis
+└── superstore.db                     # SQLite database
+
+```
+
+---
+
+## 🔄 Workflow
+
+```
+CSV (Raw Data)
+    ↓
+Python ETL (clean, transform)
+    ↓
+SQLite Database
+    ↓
+SQL Analysis + Plotly Charts
+    ↓
+Power BI Dashboard + Excel Report
+
+```
+
+---
+
+## 📊 Dashboard Pages (Power BI)
+
+| Page | Content |
+| --- | --- |
+| 1️⃣ Overview | 5 KPIs, 4 charts, 2 Slicers |
+| 2️⃣ Sales Analysis | YoY%, monthly trend, discount analysis |
+| 3️⃣ Product Analysis | TOP/BOTTOM 10, profit margin |
+| 4️⃣ Customer Analysis | RFM segmentation, region, TOP 10 |
+
+---
+
+## 👥 RFM Customer Segmentation
+
+| Segment | Customer Count | Strategy |
+| --- | --- | --- |
+| ⭐ VIP | 193 | Loyalty program |
+| 💚 Loyal | 222 | Reward them |
+| 🔵 Potential | 182 | Activate |
+| ⚠️ At Risk | 141 | Send campaigns |
+| ❌ Churned | 55 | Win-back campaign |
+
+---
+
+## ▶️ How to Run
+
+```bash
+# 1. Clone
+git clone https://github.com/zamanovaalmaz04-glitch/superstore-dashboard.git
+
+# 2. Install packages
+pip install pandas plotly openpyxl
+
+# 3. Run ETL
+jupyter notebook notebooks/01_etl.ipynb
+
+# 4. Run Analysis
+jupyter notebook notebooks/02_analiz.ipynb
+
+# 5. View interactive dashboards
+open dashboard/index.html
+
+```
+
+---
+
+## 📬 Contact
+
+**Almaz Zamanova** — Data Analytics Specialist
+
+📧 zamanovaalmaz04@gmail.com
+
+---
+
+This project demonstrates end-to-end data analytics skills —
+
+ETL, SQL, Power BI dashboard, RFM segmentation, and interactive visualization.# 📊 Superstore Satış Analizi Dashboard
 
 > **ABŞ pərakəndə mağazasının 4 illik (2014-2017) satış datasının tam analizi —**  
 > Python ETL · SQLite · SQL · Power BI · Plotly · RFM Analizi
